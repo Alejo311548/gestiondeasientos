@@ -1,4 +1,4 @@
-package com.aerolinea.gestiondeasientos; 
+package com.aerolinea.gestiondeasientos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
