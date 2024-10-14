@@ -1,0 +1,102 @@
+/* src/components/SeatSelection.css */
+.seat-selection-container {
+    padding: 30px; /* Aumentar el padding */
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Sombra más sutil y pronunciada */
+    max-width: 900px; /* Ancho máximo del contenedor */
+    margin: 40px auto; /* Centrando el contenedor */
+    font-family: 'Arial', sans-serif; /* Fuente general */
+}
+
+.seat-selection-title {
+    font-size: 32px; /* Tamaño del título */
+    text-align: center; /* Centrar texto */
+    color: #2c3e50; /* Color oscuro */
+    margin-bottom: 30px; /* Espacio inferior */
+    font-weight: bold; /* Negrita para el título */
+}
+
+.reservation-form {
+    display: flex; /* Usar flexbox para el formulario */
+    justify-content: center; /* Centrar elementos dentro del formulario */
+    margin-bottom: 20px; /* Espacio inferior entre el formulario y la lista de asientos */
+}
+
+.reservation-input {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-right: 10px; /* Espacio a la derecha del input */
+    font-size: 16px; /* Tamaño de fuente */
+    width: 200px; /* Ancho del campo de entrada */
+}
+
+.reservation-button {
+    padding: 10px 15px; /* Espaciado interno */
+    background-color: #3498db; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.reservation-button:hover {
+    background-color: #2980b9; /* Color al pasar el ratón */
+}
+
+.reservation-info {
+    margin-top: 20px; /* Espacio superior para la información de la reserva */
+    padding: 15px; /* Espaciado interno */
+    background-color: #eaf3f8; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.seat-selection {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los asientos se ajusten a múltiples líneas */
+    justify-content: center; /* Centrando los elementos */
+    gap: 20px; /* Espacio entre los asientos */
+}
+
+.seat {
+    background-color: #eaf3f8; /* Color de fondo para los asientos */
+    border: 2px solid transparent; /* Borde transparente inicialmente */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 0; /* Eliminar margen */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    width: 160px; /* Ancho fijo para los asientos */
+    transition: border 0.3s, transform 0.3s; /* Transición suave para el borde y la transformación */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Añadir sombra sutil a los asientos */
+}
+
+.seat:hover {
+    transform: translateY(-5px); /* Elevar ligeramente el asiento al pasar el ratón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumentar sombra al pasar el ratón */
+}
+
+.seat.available {
+    border: 2px solid #2ecc71; /* Borde verde para asientos disponibles */
+}
+
+.seat.unavailable {
+    background-color: #f8d7da; /* Color de fondo para asientos no disponibles */
+    color: #721c24; /* Color de texto para asientos no disponibles */
+}
+
+.seat-image {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    border-radius: 8px; /* Bordes redondeados de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.seat-number,
+.seat-status {
+    font-size: 14px; /* Tamaño de fuente para la descripción y estado */
+    margin-top: 5px; /* Espacio superior */
+}

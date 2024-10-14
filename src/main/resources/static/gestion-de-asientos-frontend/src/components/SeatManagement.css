@@ -1,0 +1,129 @@
+/* src/components/SeatManagement.css */
+.seat-management-container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 30px auto; /* Margen superior e inferior para separación */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados más suaves */
+    background-color: #ffffff; /* Color de fondo blanco */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transition: box-shadow 0.3s ease; /* Efecto suave en la sombra */
+}
+
+.seat-management-container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+h1 {
+    text-align: center; /* Centrar el título */
+    color: #333; /* Color negro para el título */
+    font-size: 28px; /* Tamaño de fuente más grande */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    font-weight: bold; /* Negrita para mayor énfasis */
+}
+
+.input-group {
+    display: flex; /* Flexbox para el grupo de entrada */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.input-field {
+    flex: 1; /* Permitir que el campo de entrada se expanda */
+    padding: 12px; /* Espaciado interno más grande */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 6px; /* Bordes redondeados más suaves */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-right: 10px; /* Espaciado a la derecha */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.input-field:focus {
+    border-color: #007bff; /* Cambiar el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+.search-button {
+    padding: 12px 25px; /* Espaciado interno más grande */
+    background-color: #007bff; /* Color de fondo azul */
+    color: #ffffff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+.loading-message,
+.error-message {
+    text-align: center; /* Centrar texto */
+    color: #dc3545; /* Color de error */
+    margin: 10px 0; /* Margen */
+}
+
+.result-container {
+    background-color: #f1f1f1; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior */
+    border: 1px solid #ccc; /* Borde gris */
+}
+
+.reservation-details {
+    line-height: 1.6; /* Espaciado de línea */
+    color: #333; /* Color del texto negro */
+}
+
+strong {
+    color: #333; /* Color negro para textos destacados */
+    font-weight: bold; /* Negrita para mayor énfasis */
+}
+
+.new-search-button {
+    margin-left: 10px; /* Espacio entre botones */
+    background-color: #f0f0f0; /* Color de fondo */
+    border: 1px solid #ccc; /* Bordes */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+.new-search-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo compartido para ambos botones */
+.button {
+    margin-left: 10px; /* Espacio entre botones */
+    background-color: #007BFF; /* Color de fondo (azul suave) */
+    border: none; /* Sin bordes */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alinear texto al centro */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Cambiar color de fondo al pasar el mouse */
+.button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+/* Especificar el estilo para el botón de búsqueda */
+.search-button {
+    /* Aquí puedes agregar o modificar estilos específicos si lo deseas */
+}
+
+/* Especificar el estilo para el botón de nueva búsqueda */
+.new-search-button {
+    /* Aquí puedes agregar o modificar estilos específicos si lo deseas */
+}

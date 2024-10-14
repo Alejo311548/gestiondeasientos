@@ -1,0 +1,84 @@
+/* src/components/Home.css */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #f7f9fc; /* Fondo blanco suave */
+    font-family: 'Arial', sans-serif; /* Fuente general */
+    color: #000000;; /* Color negro suave para el texto */
+    font-size: 24px; /* Tamaño de fuente aumentado para el texto general */
+}
+
+.navbar {
+    background-color: #3498db; /* Azul brillante para la navbar */
+    color: white; /* Texto en blanco */
+    padding: 15px 40px; /* Espaciado interno */
+    width: 100%; /* Ocupa el ancho completo */
+    position: fixed; /* Fijo en la parte superior */
+    top: 0; /* Al frente */
+    left: 0; /* Al frente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    display: flex;
+    justify-content: space-between; /* Espacio entre el título y los enlaces */
+    align-items: center; /* Centra verticalmente */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 5px;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 80px;
+}
+
+.navbar li {
+    margin-left: 20px; /* Espacio entre los enlaces ajustado a 20px */
+}
+
+.navbar a {
+    color: white; /* Texto de los enlaces en blanco */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    font-weight: 600; /* Negrita */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+.navbar a:hover {
+    color: #ffdd57; /* Color dorado al pasar el ratón */
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+h1 {
+    margin: 20px 0; /* Margen vertical */
+    font-size: 36px; /* Tamaño del saludo */
+    text-align: center; /* Centrar texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil para el texto */
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2980b9; /* Azul más oscuro para el botón */
+    color: white; /* Color de texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+}
+
+button:hover {
+    background-color: #1f6287; /* Color de fondo al pasar el ratón (más oscuro) */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}

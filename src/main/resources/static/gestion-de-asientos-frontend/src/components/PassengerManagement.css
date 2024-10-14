@@ -1,0 +1,71 @@
+/* src/components/PassengerManagement.css */
+
+.passenger-management-container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 30px auto; /* Margen superior e inferior para separación */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados más suaves */
+    background-color: #ffffff; /* Color de fondo blanco */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transition: box-shadow 0.3s ease; /* Efecto suave en la sombra */
+}
+
+.passenger-management-container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+h2 {
+    text-align: center; /* Centrar el título */
+    color: #333; /* Color negro para el título */
+    font-size: 28px; /* Tamaño de fuente más grande */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    font-weight: bold; /* Negrita para mayor énfasis */
+}
+
+.passenger-table {
+    width: 100%; /* Tabla ocupa todo el ancho */
+    border-collapse: collapse; /* Colapsar bordes */
+}
+
+.passenger-table th,
+.passenger-table td {
+    border: 1px solid #ddd; /* Bordes ligeros */
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.passenger-table th {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto blanco para el encabezado */
+    font-weight: bold; /* Negrita en encabezados */
+}
+
+.passenger-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo alternado para filas */
+}
+
+.passenger-table tr:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el mouse */
+}
+
+.passenger-table input {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.passenger-table button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.passenger-table button:hover {
+    background-color: #0056b3;
+}
