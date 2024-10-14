@@ -1,30 +1,41 @@
+# Workflow name
 name: CI/CD Pipeline
 
 on:
+  # Manually trigger workflow runs
+  workflow_dispatch:
+  # Trigger the workflow on push from the main branch
   push:
-    branches:
-      - main  # O la rama que utilices para producción
-  pull_request:
     branches:
       - main
 
 jobs:
-  build:
+  # Test job
+  tests:
+    name: Unit tests
+    # Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
 
+    # Job steps
     steps:
-      - name: Checkout code
+      # Check out your repository under $GITHUB_WORKSPACE
+      - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Set up JDK 17
+      # Set up JDK
+      - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '17'  
-          distribution: 'temurin'
+          java-version: '17'
 
-      - name: Build with Maven
-        run: mvn clean install
+      # Set up Maven cache
+      - name: Cache Maven packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
 
-      - name: Run tests
-        run: mvn test
-
+      # Run Tests
+      - name: Run Tests
+        run: mvn -B test
